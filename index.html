@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="#" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link rel="preconnect" href="https://scripts.sirv.com" crossorigin />
+		<link rel="preconnect" href="https://listyara.sirv.com" crossorigin />
+		<link rel="dns-prefetch" href="https://scripts.sirv.com" />
+		<link rel="dns-prefetch" href="https://listyara.sirv.com" />
+
+		<title>CS25XL</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="video3" class="videoContainer"></div>
+			<div id="video2" class="videoContainer"></div>
+			<div id="video1" class="videoContainer"></div>
+			<div id="loop" class="videoContainer">
+				<!-- <video
+					id="loopVideo"
+					src="./assets/loop.mp4"
+					playsinline
+					muted
+					autoplay
+					loop
+				></video> -->
+				<img id="loopVideo" src="assets/homeScreen.png" alt="" />
+			</div>
+
+			<div id="mainButtons" class="show">
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button id="fullscreen_button" class="button">
+							<i
+								id="expand"
+								class="fa-solid fa-up-right-and-down-left-from-center"
+							></i>
+							<i
+								id="contract"
+								class="fa-solid fa-down-left-and-up-right-to-center disabledb"
+							></i>
+						</button>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button
+							id="button1_button"
+							class="button mainMenuB"
+							style="right: 74%; top: 31%"
+						>
+							Product Details
+						</button>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button
+							id="button2_button"
+							class="button mainMenuB"
+							style="right: 43.5%; top: 21.4%"
+						>
+							Key Points
+						</button>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button
+							id="button3_button"
+							class="button mainMenuB"
+							style="left: 75%; top: 31%"
+						>
+							Enviroments
+						</button>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button
+							id="button4_button"
+							class="circleButton mainMenuB"
+							style="left: 51%; top: 51%"
+						></button>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button
+							id="button5_button"
+							class="circleButton mainMenuB"
+							style="right: 60%; top: 60%"
+						></button>
+					</div>
+				</div>
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button
+							id="button6_button"
+							class="circleButton mainMenuB"
+							style="right: 78.5%; top: 67%"
+						></button>
+					</div>
+				</div>
+
+				<!-- <div class="centerContainer">
+					<div class="buttonContainer">
+						<button
+							id="button7_button"
+							class="button mainMenuB"
+							style="right: 71.8%; top: 86.5%"
+						>
+							Top and Bottom Sealing
+						</button>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="svgContainer">
+						<svg id="button7_line_svg" class="svg" width="100%" height="100%">
+							<line x1="25%" y1="88%" x2="48%" y2="50.5%" stroke="#f04923" />
+							<circle
+								id="button7_circle"
+								class="svgDot"
+								cx="48%"
+								cy="50.5%"
+								fill="#f04923"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<button
+							id="button5_button"
+							class="button mainMenuB"
+							style="right: 78.5%; top: 50%"
+						>
+							Simplified Changeover
+						</button>
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="svgContainer">
+						<svg id="button5_line_svg" class="svg" width="100%" height="100%">
+							<line x1="20%" y1="52.5%" x2="30.5%" y2="52%" stroke="#f04923" />
+							<circle
+								id="button3_circle"
+								class="svgDot"
+								cx="30.5%"
+								cy="52%"
+								fill="#f04923"
+							/>
+						</svg>
+					</div>
+				</div> -->
+			</div>
+
+			<div id="showCont" class="showCont hidden short-vanish"></div>
+			<div class="warning">
+				<div class="modal">
+					<i class="fa-solid fa-circle-exclamation warnIcon"></i>
+					<span class="warningText"></span>
+				</div>
+			</div>
+			<div class="alertdiv">
+				<div class="modalalert">
+					<span id="close" class="x" value=""> &#x2715; </span>
+					<i class="fa-solid fa-circle-exclamation alertIcon"></i>
+					<span class="alertText">
+						Using this website on a Chrome web browser is recommended
+					</span>
+				</div>
+			</div>
+			<div class="loader">
+				<i class="fa-solid fa-spinner loadingIcon"></i>
+			</div>
+			<div class="initial"></div>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+	<script src="https://scripts.sirv.com/sirv.js"></script>
+
+	<script src="js/main.js"></script>
+</html>
