@@ -30,8 +30,10 @@
 }
 .pD_main {
 	width: 100%;
-	display: block;
+	display: flex;
 	height: 75%;
+	justify-content: center;
+	align-items: center;
 	background: transparent;
 }
 
@@ -61,4 +63,18 @@
 
 .pD_svg {
 	padding: 20px;
+}
+.pD_mainContainer {
+	width: 70%;
+	height: 90%;
+}
+
+.pD_video {
+	/* height: 100%; */
+	width: 100%;
+	display: flex;
+}
+
+.pD_buttonGroup button:first-child {
+	border-bottom: 0.5em solid white;
 }

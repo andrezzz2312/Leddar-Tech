@@ -215,13 +215,13 @@ function animations() {
 }
 
 // Create the video tags storaged in videoContainer div
-function createVideos(source1, source2, source3) {
+function createMedia(source1) {
 	if (source1) {
 		video1 = document.createElement('video')
 		video1.src = source1
 		video1.muted = true
 		video1.setAttribute('playsinline', 'playsinline')
-		video1.controls = false
+		// video1.controls = false
 		video1.autoplay = true
 		video1.classList.add('video')
 		video1.style.opacity = 0
@@ -229,34 +229,35 @@ function createVideos(source1, source2, source3) {
 		// loopContainer.appendChild(video1)
 		video1Container.appendChild(video1)
 	}
-	if (source2) {
-		video2 = document.createElement('video')
-		video2.src = source2
-		video2.loop = true
-		video2.muted = true
-		video2.setAttribute('playsinline', 'playsinline')
 
-		video2.controls = false
-		video2.autoplay = true
-		video2.classList.add('video')
-		video2.style.opacity = 0
-		video2.pause()
-		// loopContainer.appendChild(video2)
-		video2Container.appendChild(video2)
-	}
-	if (source3) {
-		video3 = document.createElement('video')
-		video3.src = source3
-		video3.muted = true
-		video3.autoplay = true
-		video3.setAttribute('playsinline', 'playsinline')
-		video3.controls = false
-		video3.classList.add('video')
-		video3.style.opacity = 0
-		video3.pause()
-		// loopContainer.appendChild(video3)
-		video3Container.appendChild(video3)
-	}
+	// if (source2) {
+	// 	video2 = document.createElement('video')
+	// 	video2.src = source2
+	// 	video2.loop = true
+	// 	video2.muted = true
+	// 	video2.setAttribute('playsinline', 'playsinline')
+
+	// 	video2.controls = false
+	// 	video2.autoplay = true
+	// 	video2.classList.add('video')
+	// 	video2.style.opacity = 0
+	// 	video2.pause()
+	// 	// loopContainer.appendChild(video2)
+	// 	video2Container.appendChild(video2)
+	// }
+	// if (source3) {
+	// 	video3 = document.createElement('video')
+	// 	video3.src = source3
+	// 	video3.muted = true
+	// 	video3.autoplay = true
+	// 	video3.setAttribute('playsinline', 'playsinline')
+	// 	video3.controls = false
+	// 	video3.classList.add('video')
+	// 	video3.style.opacity = 0
+	// 	video3.pause()
+	// 	// loopContainer.appendChild(video3)
+	// 	video3Container.appendChild(video3)
+	// }
 }
 
 // Create the content storaged in showCont div / Left and Top position of the container div, label title and content of the paragraph
@@ -347,7 +348,7 @@ function createContent(
 			boxVideo[i].autoplay = true
 			boxVideo[i].loop = true.muted = true
 			boxVideo[i].setAttribute('playsinline', 'playsinline')
-			boxVideo[i].controls = false
+			// boxVideo[i].controls = false
 			boxVideo[i].classList.add('boxVideo')
 			list.appendChild(boxVideo[i])
 		}
