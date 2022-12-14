@@ -6,15 +6,15 @@ html {
 body {
 	width: 100%;
 	height: 100%;
+
+	overflow: hidden;
+	/* padding: 3vh; */
+}
+.pD_body {
 	display: flex;
 	flex-direction: column;
 	background: rgb(39, 196, 214);
 	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
-	overflow: hidden;
-	/* padding: 3vh; */
-}
-body > * {
-	text-align: center;
 }
 /* .pD_body {
 	display: flex;
@@ -32,11 +32,12 @@ body > * {
 .pD_nav {
 	width: 100%;
 	height: 25%;
-	gap: 2vh;
+	/* gap: 2vh; */
 	padding-top: 4vh;
 	background: transparent;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 .pD_button {
@@ -62,8 +63,7 @@ body > * {
 	justify-content: center;
 	align-items: flex-end;
 	width: 100%;
-
-	height: max-content;
+	height: 50%;
 }
 
 .pD_svgContainer {
@@ -78,32 +78,31 @@ body > * {
 .pD_main {
 	width: 100%;
 	display: flex;
-	height: 80%;
-	/* margin-bottom: -2vh; */
+	height: 75%;
+
 	justify-content: center;
 	align-items: center;
 	background: transparent;
 }
 .pD_mainContainer {
 	width: 70%;
-	height: 90%;
+	height: 92%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .pD_video {
 	/* height: auto; */
-	max-height: 100%;
-	max-width: 95%;
+	max-height: 90%;
+	max-width: 100%;
 	/* height: 100%; */
 	/* width: 100%; */
 	display: flex;
 }
 .pD_image {
-	/* height: 100%; */
 	width: 100%;
+	height: 100%;
 	display: flex;
-	object-fit: contain;
 }
 
 .pD_buttonGroup button:first-child {
