@@ -1,13 +1,22 @@
-*,
-::after,
-::before {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+html {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 }
-.pD_body {
+body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background: rgb(39, 196, 214);
+	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
+	overflow: hidden;
+	/* padding: 3vh; */
+}
+body > * {
+	text-align: center;
+}
+/* .pD_body {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -15,7 +24,7 @@
 	background: rgb(39, 196, 214);
 	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
 	padding: 3vh;
-}
+} */
 .pD_body > * {
 	text-align: center;
 }
@@ -23,56 +32,78 @@
 .pD_nav {
 	width: 100%;
 	height: 25%;
-	display: block;
+	gap: 2vh;
+	padding-top: 4vh;
 	background: transparent;
 	display: flex;
 	flex-direction: column;
-}
-.pD_main {
-	width: 100%;
-	display: flex;
-	height: 75%;
-	justify-content: center;
-	align-items: center;
-	background: transparent;
 }
 
 .pD_button {
 	border: none;
 	border-bottom: 0.2em solid hsla(360, 100%, 100%, 0.7);
-	padding: 2vh 3.5vh;
+	padding: 2vh 1.5vh;
 	background: transparent;
 	transition: 0.5s border-width ease;
-	margin-bottom: -3px;
+	/* margin-bottom: -3px; */
 	color: white;
+	font-size: calc(8px + (13 - 8) * ((100vw - 320px) / (1440 - 320)));
 }
-.pD_button:hover {
+/* .pD_button:hover {
 	border-bottom: 0.5em solid white;
-}
+} */
 .pdHeaderImage {
 	width: 100%;
 	height: 50%;
 }
 .pD_buttonGroup {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: flex-end;
 	width: 100%;
-	height: 35%;
+
+	height: max-content;
 }
 
+.pD_svgContainer {
+	/* padding-top: 2.5vh; */
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 .pD_svg {
-	padding: 20px;
+	width: 80%;
+}
+.pD_main {
+	width: 100%;
+	display: flex;
+	height: 80%;
+	/* margin-bottom: -2vh; */
+	justify-content: center;
+	align-items: center;
+	background: transparent;
 }
 .pD_mainContainer {
 	width: 70%;
 	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
 .pD_video {
+	/* height: auto; */
+	max-height: 100%;
+	max-width: 95%;
+	/* height: 100%; */
+	/* width: 100%; */
+	display: flex;
+}
+.pD_image {
 	/* height: 100%; */
 	width: 100%;
 	display: flex;
+	object-fit: contain;
 }
 
 .pD_buttonGroup button:first-child {
