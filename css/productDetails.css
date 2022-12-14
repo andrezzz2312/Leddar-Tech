@@ -16,7 +16,15 @@ body {
 	background: rgb(39, 196, 214);
 	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
 }
-
+/* .pD_body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background: rgb(39, 196, 214);
+	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
+	padding: 3vh;
+} */
 .pD_body > * {
 	text-align: center;
 }
@@ -51,7 +59,9 @@ body {
 	font-size: calc(8px + (13 - 8) * ((100vw - 320px) / (1440 - 320)));
 	cursor: pointer;
 }
-
+/* .pD_button:hover {
+	border-bottom: 0.5em solid white;
+} */
 .pdHeaderImage {
 	width: 100%;
 	height: 50%;
@@ -66,6 +76,7 @@ body {
 }
 
 .pD_svgContainer {
+	/* padding-top: 2.5vh; */
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -90,9 +101,11 @@ body {
 	align-items: center;
 }
 .pD_video {
+	/* height: auto; */
 	max-height: 90%;
 	max-width: 100%;
-
+	/* height: 100%; */
+	/* width: 100%; */
 	display: flex;
 }
 .pD_image {
