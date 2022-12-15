@@ -1,0 +1,96 @@
+.kP_exit {
+	position: static;
+	font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+	color: white;
+	text-shadow: 0.5vh 0.5vh 2px #17aede;
+}
+.kP_exitContainer {
+	margin-right: auto;
+	/* margin-left: 5vh; */
+	/* align-self: flex-start; */
+	transform: translateX(230%);
+
+	/* margin-top: 2vh; */
+}
+.kP_nav {
+	width: 100%;
+	/* height: 5em; */
+	/* gap: 2vh; */
+	padding-top: 2vh;
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.kP_body {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+}
+.kP_modal {
+	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
+	width: 80%;
+	height: auto;
+	border-radius: 2vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.kP_buttonGroup {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	height: 100%;
+}
+.spacer {
+	margin-left: auto;
+	font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+	opacity: 0;
+}
+.kP_button {
+	border: none;
+	border-bottom: 0.2em solid hsla(360, 100%, 100%, 0.7);
+	padding: 2vh 1.5vh;
+	background: transparent;
+	transition: 0.5s border-width ease;
+	/* margin-bottom: -3px; */
+	color: white;
+	font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+	cursor: pointer;
+}
+.kP_main {
+	width: 100%;
+
+	display: flex;
+	height: max-content;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	padding: 3vh;
+}
+.kP_mainContainer {
+	width: 85%;
+
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+	border: solid white 0.15em;
+	background-color: hsla(182, 96%, 89%, 0.25);
+	border-radius: 1vh;
+}
+.kP_paragraph {
+	color: white;
+	padding: 4vh;
+	font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (1440 - 320)));
+	line-height: calc(0.5em + (20 - 0.5) * ((100vw - 320px) / (1440 - 320)));
+	white-space: pre-line;
+	text-align: start;
+}
+.kP_paragraph ul li {
+	margin-left: 2em;
+}

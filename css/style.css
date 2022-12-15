@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import "productDetails.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'productDetails.css';
+@import 'keyPoints.css';
 
 *,
 ::after,
@@ -10,7 +11,7 @@
 }
 
 * {
-	font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
 circle {
@@ -159,7 +160,7 @@ body {
 
 .circleButton:before {
 	background-color: transparent;
-	content: "";
+	content: '';
 	display: block;
 	height: 100%;
 	width: 100%;
@@ -331,32 +332,10 @@ a {
 	transform: scale(0);
 	overflow: hidden;
 }
-.pCont ul {
-	display: flex;
-	flex-direction: column;
-}
-ul {
-	list-style: none; /* Remove default bullets */
-	opacity: 0;
-}
-ul img {
-	margin-top: 0.5rem;
-}
-ul li {
-	white-space: pre-wrap;
-	margin-bottom: 0.5em;
-	margin-left: 0.7rem;
-	text-indent: -0.7em; /*Cambiar esto tambien si se quiere separar la bullet del texto */
-}
-li:last-child {
-	margin-bottom: 0;
-}
 
-ul li::before {
-	content: "\2022";
-	color: #ff4500;
-	margin-right: 0.3em; /* Separacion de la bullet con el texto */
-}
+/* li:last-child {
+	margin-bottom: 0;
+} */
 
 .backButton {
 	position: relative;
