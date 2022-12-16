@@ -34,17 +34,76 @@
 	display: flex;
 }
 .e_footer {
+	position: relative;
 	width: 100%;
 	/* height: auto; */
 	flex: 1;
 	/* gap: 2vh; */
-
 	background: transparent;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-end;
 	overflow: visible;
+}
+.e_buttonGroupContainer {
+	position: absolute;
+	right: 3%;
+	bottom: 0%;
+	margin-bottom: 3%;
+	justify-content: center;
+	align-items: center;
+	gap: 2vh;
+	display: flex;
+	flex-direction: column;
+}
+.e_buttonGroupContainer button {
+	font-weight: 500;
+	cursor: pointer;
+}
+.e_buttonGroup {
+	gap: 0vh;
+	display: flex;
+}
+.e_subButtonGroup {
+	gap: 0vh;
+	display: flex;
+}
+
+.e_button {
+	border: solid 0.2vh #88dee2;
+	background: #dff8f9;
+	color: #5eb9bd;
+	font-size: calc(9px + (18 - 9) * ((100vw - 320px) / (1440 - 320)));
+	padding: 2vh;
+	border-radius: 1vh;
+}
+.e_subButton {
+	font-size: calc(7px + (12 - 7) * ((100vw - 320px) / (1440 - 320)));
+	padding: 1vh;
+	border-radius: 1vh;
+	border: solid 0.2vh #88dee2;
+	background: #dff8f9;
+	color: #5eb9bd;
+	cursor: pointer;
+	white-space: pre-wrap;
+}
+.e_activeButton {
+	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
+	color: #ffffff;
+}
+.e_activeButtonPurple {
+	background: linear-gradient(
+		38deg,
+		rgba(193, 127, 227, 1) 0%,
+		rgba(104, 49, 142, 1) 100%
+	);
+	color: #ffffff !important;
+}
+.e_buttonPurple {
+	border: solid #8148a9 0.2vh;
+	color: #5d2884;
+	background-color: #e8cef5;
 }
 .e_steeringImg {
 	position: relative;

@@ -365,12 +365,27 @@ a {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: hsla(239, 20%, 10%, 0.82);
+	/* background-color: hsla(239, 20%, 10%, 0.82); */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	z-index: -100;
 	opacity: 0;
+	transition: all 0.2s ease;
+}
+.blurBg {
+	background: hsla(240, 7%, 29%, 0.82);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -100;
+	top: 0;
+	left: 0;
+	transition: all 0.2s ease;
 }
 .modal {
 	display: flex;
