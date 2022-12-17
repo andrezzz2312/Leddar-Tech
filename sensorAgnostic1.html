@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="#" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link rel="preconnect" href="https://scripts.sirv.com" crossorigin />
+		<link rel="preconnect" href="https://listyara.sirv.com" crossorigin />
+		<link rel="dns-prefetch" href="https://scripts.sirv.com" />
+		<link rel="dns-prefetch" href="https://listyara.sirv.com" />
+
+		<title>Leddar Tech</title>
+	</head>
+
+	<body class="sA_body">
+		<div class="sA_container">
+			<div id="loop" class="sA_videoContainer">
+				<!-- <video
+					id="loopVideo"
+					src="./assets/loop.mp4"
+					playsinline
+					muted
+					autoplay
+					loop
+				></video> -->
+
+				<img
+					id="img"
+					src="assets/sensorAgnostics/button1/graphic3.jpg"
+					alt=""
+				/>
+				<img
+					id="img"
+					src="assets/sensorAgnostics/button1/graphic2.jpg"
+					alt=""
+				/>
+				<img
+					id="img"
+					src="assets/sensorAgnostics/button1/graphic1.jpg"
+					alt=""
+				/>
+				<div class="sA_aContainer">
+					<a href="index.html" class="sA_backA">
+						<button class="sA_backButton">BACK</button>
+					</a>
+				</div>
+			</div>
+
+			<div class="blurBg"></div>
+			<div class="warning">
+				<div class="modal">
+					<i class="fa-solid fa-circle-exclamation warnIcon"></i>
+					<span class="warningText"></span>
+				</div>
+			</div>
+			<div class="alertdiv">
+				<div class="modalalert">
+					<span id="close" class="x" value=""> &#x2715; </span>
+					<i class="fa-solid fa-circle-exclamation alertIcon"></i>
+					<span class="alertText">
+						Using this website on a Chrome web browser is recommended
+					</span>
+				</div>
+			</div>
+			<div class="loader">
+				<i class="fa-solid fa-spinner loadingIcon"></i>
+			</div>
+			<div class="initial"></div>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+	<script src="https://scripts.sirv.com/sirv.js"></script>
+
+	<script src="js/sensorAgnostic.js"></script>
+	<script src="js/dimensionWarning.js"></script>
+</html>
