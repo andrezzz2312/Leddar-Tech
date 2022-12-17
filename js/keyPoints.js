@@ -52,7 +52,7 @@ kP_buttons.forEach((buttonElement, i) => {
 				break
 
 			case 'SCALABILITY':
-				kP_paragraph.innerHTML = `LeddarVision is a scalable solution that enables the development of entry-levelL2/L2+ ADAS
+				kP_paragraph.innerHTML = `LeddarVision is a scalable solution that enables the development of entry-level L2/L2+ ADAS
         to AD on a common platform. Solution computation power efficiently scales with sensor
         additions and rework efforts are minimized with limited sensor changes. This results in
         reduced R&D time, lower costs, and faster time-to-market for OEMs and Tier 1-2s.`

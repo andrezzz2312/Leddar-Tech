@@ -1,15 +1,15 @@
 .kP_exit {
-	position: static;
-	font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+	font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1440 - 320)));
 	color: white;
 	text-shadow: 0.5vh 0.5vh 2px #17aede;
 }
 .kP_exitContainer {
-	margin-right: auto;
+	/* margin-right: auto; */
 	/* margin-left: 5vh; */
 	/* align-self: flex-start; */
-	transform: translateX(230%);
-
+	/* transform: translateX(230%); */
+	align-items: center;
+	display: flex;
 	/* margin-top: 2vh; */
 }
 .kP_nav {
@@ -42,13 +42,16 @@
 .kP_buttonGroup {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: flex-end;
+	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 	height: 100%;
 }
+.kP_buttonContainer {
+	display: flex;
+	justify-content: center;
+}
 .spacer {
-	margin-left: auto;
 	font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
 	opacity: 0;
 }
@@ -65,7 +68,6 @@
 }
 .kP_main {
 	width: 100%;
-
 	display: flex;
 	height: max-content;
 	justify-content: center;

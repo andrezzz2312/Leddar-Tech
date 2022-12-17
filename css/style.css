@@ -2,6 +2,7 @@
 @import 'productDetails.css';
 @import 'keyPoints.css';
 @import 'enviroments.css';
+@import 'sensorAgnostic.css';
 
 *,
 ::after,

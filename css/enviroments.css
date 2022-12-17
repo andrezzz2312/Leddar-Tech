@@ -8,27 +8,50 @@
 		rgba(13, 13, 13, 1) 100%
 	);
 }
+.e_backButton {
+	/* position: absolute; */
+	top: 4%;
+	left: 3%;
+	text-align: center;
+	border-radius: 0.5em;
+	position: absolute;
+	border: none;
+	padding: 1.5% 2%;
+	color: white;
+	background: rgb(39, 196, 214);
+	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
+	cursor: pointer;
+	z-index: 2;
+	overflow: hidden;
+	transition: 0.5s all ease;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	font-size: calc(9px + (18 - 9) * ((100vw - 320px) / (1440 - 320)));
+}
+.e_backButton:hover {
+	transform: scale(110%);
+}
+.e_main {
+	width: 100%;
+	display: flex;
+	height: 70%;
 
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+}
 .e_mainContainer {
 	width: 70%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 }
-.e_main {
-	width: 100%;
-	display: flex;
-	height: 60%;
 
-	justify-content: center;
-	align-items: flex-start;
-	background: transparent;
-}
 .e_video {
 	/* height: auto; */
 	/* max-height: 100%; */
 	max-width: 100%;
+	max-height: 100%;
 	/* height: 100%; */
 	/* width: 100%; */
 	display: flex;
@@ -36,6 +59,7 @@
 .e_footer {
 	position: relative;
 	width: 100%;
+	height: 30%;
 	/* height: auto; */
 	flex: 1;
 	/* gap: 2vh; */
@@ -49,8 +73,9 @@
 .e_buttonGroupContainer {
 	position: absolute;
 	right: 3%;
-	bottom: 0%;
-	margin-bottom: 3%;
+	top: 0%;
+	height: 100%;
+	/* margin-bottom: 3vh; */
 	justify-content: center;
 	align-items: center;
 	gap: 2vh;
@@ -109,5 +134,5 @@
 	position: relative;
 	width: 100%;
 	left: 0;
-	bottom: 0;
+	top: 0;
 }

@@ -1,6 +1,7 @@
 const e_buttons = document.querySelectorAll('.e_button')
 const e_buttonGroup = document.querySelector('.e_buttonGroup')
 const e_subButton = document.querySelectorAll('.e_subButton')
+const e_video = document.querySelector('.e_video')
 
 const perHArray = [
 	'3D RGBD\nEnviromental\nModeling',
@@ -36,9 +37,9 @@ e_buttons.forEach((buttonElement, i) => {
 				perHid.forEach((e, i) => {
 					perHid[i] = 'perH' + e
 				})
-				e_subButton.forEach((e, i) => {
-					e.dataset.attribute = perHid[i]
-					e.textContent = perHArray[i]
+				e_subButton.forEach((subButtonElement, i) => {
+					subButtonElement.dataset.id = perHid[i]
+					subButtonElement.textContent = perHArray[i]
 				})
 				break
 
@@ -54,7 +55,7 @@ e_buttons.forEach((buttonElement, i) => {
 					adaSid[i] = 'adaS' + e
 				})
 				e_subButton.forEach((e, i) => {
-					e.dataset.attribute = adaSid[i]
+					e.dataset.id = adaSid[i]
 					e.textContent = adaSArray[i]
 				})
 				break
@@ -72,7 +73,7 @@ e_buttons.forEach((buttonElement, i) => {
 				})
 
 				e_subButton.forEach((e, i) => {
-					e.dataset.attribute = opeEid[i]
+					e.dataset.id = opeEid[i]
 					e.textContent = opeEArray[i]
 				})
 				break
@@ -89,7 +90,7 @@ e_buttons.forEach((buttonElement, i) => {
 					ledOid[i] = 'ledO' + e
 				})
 				e_subButton.forEach((e, i) => {
-					e.dataset.attribute = ledOid[i]
+					e.dataset.id = ledOid[i]
 					e.classList.add('e_buttonPurple')
 					e.textContent = ledOArray[i]
 				})
@@ -118,11 +119,57 @@ e_subButton.forEach((subButtonElement) => {
 		} else {
 			e.currentTarget.classList.add('e_activeButton')
 		}
-
+		console.log(e.currentTarget.dataset.id)
 		switch (e.currentTarget.dataset.id) {
-			case value:
+			case 'perH3drE':
+				console.log('working')
+				e_video.src = '../assets/enviroments/enviromentalVideos/1.1.mp4'
 				break
-
+			case 'perHperC':
+				e_video.src = '../assets/enviroments/enviromentalVideos/1.2.mp4'
+				break
+			case 'perHlanD':
+				e_video.src = '../assets/enviroments/enviromentalVideos/1.3.mp4'
+				break
+			case 'perHaddF':
+				e_video.src = '../assets/enviroments/enviromentalVideos/1.4.mp4'
+				break
+			case 'adaSobjS':
+				e_video.src = '../assets/enviroments/enviromentalVideos/2.1.mp4'
+				break
+			case 'adaSoccO':
+				e_video.src = '../assets/enviroments/enviromentalVideos/2.2.mp4'
+				break
+			case 'adaSlanD':
+				e_video.src = '../assets/enviroments/enviromentalVideos/1.3.mp4'
+				break
+			case 'adaSaddF':
+				e_video.src = '../assets/enviroments/enviromentalVideos/2.4.mp4'
+				break
+			case 'opeEopeB':
+				e_video.src = '../assets/enviroments/enviromentalVideos/3.1.mp4'
+				break
+			case 'opeEopeR':
+				e_video.src = '../assets/enviroments/enviromentalVideos/3.2.mp4'
+				break
+			case 'opeEfaiC':
+				e_video.src = '../assets/enviroments/enviromentalVideos/3.3.mp4'
+				break
+			case 'opeEopeD':
+				e_video.src = '../assets/enviroments/enviromentalVideos/3.4.mp4'
+				break
+			case 'ledOenvM':
+				e_video.src = '../assets/enviroments/enviromentalVideos/4.1.mp4'
+				break
+			case 'ledO3dT':
+				e_video.src = '../assets/enviroments/enviromentalVideos/4.2.mp4'
+				break
+			case 'ledOopeD':
+				e_video.src = '../assets/enviroments/enviromentalVideos/4.3.mp4'
+				break
+			case 'ledOdetA':
+				e_video.src = '../assets/enviroments/enviromentalVideos/4.4.mp4'
+				break
 			default:
 				break
 		}
