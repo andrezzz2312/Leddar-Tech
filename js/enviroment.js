@@ -144,7 +144,7 @@ e_subButton.forEach((subButtonElement) => {
 				e_video.src = '../assets/enviroments/enviromentalVideos/1.3.mp4'
 				break
 			case 'adaSaddF':
-				e_video.src = '../assets/enviroments/enviromentalVideos/2.4.mp4'
+				e_video.src = '../assets/enviroments/enviromentalVideos/1.4.mp4'
 				break
 			case 'opeEopeB':
 				e_video.src = '../assets/enviroments/enviromentalVideos/3.1.mp4'
@@ -156,7 +156,7 @@ e_subButton.forEach((subButtonElement) => {
 				e_video.src = '../assets/enviroments/enviromentalVideos/3.3.mp4'
 				break
 			case 'opeEopeD':
-				e_video.src = '../assets/enviroments/enviromentalVideos/3.4.mp4'
+				e_video.src = '../assets/enviroments/enviromentalVideos/3.4.mov'
 				break
 			case 'ledOenvM':
 				e_video.src = '../assets/enviroments/enviromentalVideos/4.1.mp4'
@@ -165,7 +165,7 @@ e_subButton.forEach((subButtonElement) => {
 				e_video.src = '../assets/enviroments/enviromentalVideos/4.2.mp4'
 				break
 			case 'ledOopeD':
-				e_video.src = '../assets/enviroments/enviromentalVideos/4.3.mp4'
+				e_video.src = '../assets/enviroments/enviromentalVideos/3.4.mov'
 				break
 			case 'ledOdetA':
 				e_video.src = '../assets/enviroments/enviromentalVideos/4.4.mp4'
