@@ -2,7 +2,7 @@ const kP_buttons = document.querySelectorAll('.kP_button')
 const kP_mainContainer = document.querySelector('.kP_mainContainer')
 const kP_paragraph = document.querySelector('.kP_paragraph')
 
-kP_paragraph.innerHTML = `Surpasses object-level fusion performance and enables inherent sensor redundancy for reliable operation in adverse scenarios`
+kP_paragraph.innerHTML = `SURPASSES OBJECT-LEVEL FUSION PERFORMANCE AND ENABLES INHERENT SENSOR REDUNDANCY FOR RELIABLE OPERATION IN ADVERSE SCENARIOS.`
 // `The hallmark of LeddarVision – superior performance for safe and reliable ADAS and AD.
 // LeddarVision’s Low-Level Fusion (LLF) technology exceeds the performance of legacy
 // solutions by more than doubling the object detection range, thus enabling implementation of
@@ -29,7 +29,7 @@ kP_buttons.forEach((buttonElement, i) => {
 		switch (splitText) {
 			case 'HIGH-PERFORMANCE':
 				console.log('asd')
-				kP_paragraph.innerHTML = `Surpasses object-level fusion performance and enables inherent sensor redundancy for reliable operation in adverse scenarios`
+				kP_paragraph.innerHTML = `SURPASSES OBJECT-LEVEL FUSION PERFORMANCE AND ENABLES INHERENT SENSOR REDUNDANCY FOR RELIABLE OPERATION IN ADVERSE SCENARIOS.`
 				// 	<strong style="font-weight: bold"
 				// 	>Some performance features of the technology:</strong
 				// >
@@ -40,7 +40,7 @@ kP_buttons.forEach((buttonElement, i) => {
 				break
 
 			case 'COST-EFFECTIVE':
-				kP_paragraph.innerHTML = `Increases the sensors' effective range and enables entry-level ADAS offering with lowest-cost sensors.`
+				kP_paragraph.innerHTML = `INCREASES THE SENSORS' EFFECTIVE RANGE AND ENABLES ENTRY-LEVEL ADAS OFFERING WITH LOWEST-COST SENSORS.`
 
 				// `LeddarVision is a sensor-agnostic sensor fusion and perception technology that
 				// accommodates any sensor set and architecture and can be used in many applications
@@ -51,7 +51,7 @@ kP_buttons.forEach((buttonElement, i) => {
 				break
 
 			case 'SCALABLE':
-				kP_paragraph.innerHTML = `Single architecture that scales from entry-level to premium systems, reducing rework while perception AI training continues to improve.`
+				kP_paragraph.innerHTML = `SINGLE ARCHITECTURE THAT SCALES FROM ENTRY-LEVEL TO PREMIUM SYSTEMS, REDUCING REWORK WHILE PERCEPTION AI TRAINING CONTINUES TO IMPROVE.`
 
 				// `LeddarVision is a scalable solution that enables the development of entry-level L2/L2+ ADAS
 				// to AD on a common platform. Solution computation power efficiently scales with sensor
@@ -60,7 +60,7 @@ kP_buttons.forEach((buttonElement, i) => {
 				break
 
 			case 'SENSOR-AGNOSTIC':
-				kP_paragraph.innerHTML = `Drives optimal performance from any sensor set, providing the flexibility to handle a wide variety of use cases`
+				kP_paragraph.innerHTML = `DRIVES OPTIMAL PERFORMANCE FROM ANY SENSOR SET, PROVIDING THE FLEXIBILITY TO HANDLE A WIDE VARIETY OF USE CASES`
 				// `For any given sensor set, LeddarVision’s low-level fusion and perception technology exceeds
 				// the performance of legacy solutions by more than doubling the object detection range,
 				// allowing LeddarVision to work with the most cost-efficient sensors.As an example, LVF-E

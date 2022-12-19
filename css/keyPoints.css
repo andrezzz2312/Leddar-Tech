@@ -63,7 +63,7 @@
 	transition: 0.5s border-width ease;
 	/* margin-bottom: -3px; */
 	color: white;
-	font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+	font-size: calc(10px + (24 - 10) * ((100vw - 320px) / (1440 - 320)));
 	cursor: pointer;
 }
 .kP_main {
@@ -88,8 +88,8 @@
 .kP_paragraph {
 	color: white;
 	padding: 4vh;
-	font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (1440 - 320)));
-	line-height: calc(0.5em + (20 - 0.5) * ((100vw - 320px) / (1440 - 320)));
+	font-size: calc(10px + (24 - 10) * ((100vw - 320px) / (1440 - 320)));
+	line-height: calc(0.7em + (22 - 0.7) * ((100vw - 320px) / (1440 - 320)));
 	white-space: pre-line;
 	text-align: start;
 }
