@@ -46,14 +46,40 @@ const alertdiv = document.querySelector('.alertdiv')
 const modalalert = document.querySelector('.modalalert')
 const quality = document.querySelector('#quality_button')
 const mainMenuB = document.querySelectorAll('.mainMenuB')
-
+const userAgent = navigator.userAgent
 let details = navigator.userAgent
 let regexp = /android|iphone|kindle|ipad/i
-let ios = /iphone|ipad/i
-let macosPlatforms = /(macintosh|macintel|macppc|mac68k|macos)/i
+// let ios = /iphone|ipad/i
+// let macosPlatforms = /(macintosh|macintel|macppc|mac68k|macos)/i
 let isMobileDevice = regexp.test(details)
-let isIOS = ios.test(details)
-let isMac = macosPlatforms.test(details)
+// let isIOS = ios.test(details)
+// let isMac = macosPlatforms.test(details)
+
+function checkBrowser() {
+	if (
+		(navigator.userAgent.indexOf('Opera') ||
+			navigator.userAgent.indexOf('OPR')) != -1
+	) {
+		return 'Opera'
+	} else if (navigator.userAgent.indexOf('Edg') != -1) {
+		return 'Edge'
+	} else if (navigator.userAgent.indexOf('Chrome') != -1) {
+		return 'Chrome'
+	} else if (navigator.userAgent.indexOf('Safari') != -1) {
+		return 'Safari'
+	} else if (navigator.userAgent.indexOf('Firefox') != -1) {
+		return 'Firefox'
+	} else if (
+		navigator.userAgent.indexOf('MSIE') != -1 ||
+		!!document.documentMode == true
+	) {
+		//IF IE > 10
+		return 'IE'
+	} else {
+		return 'unknown'
+	}
+}
+
 const buttons = document.querySelectorAll('.mainMenuB')
 var buttonsText = []
 buttons.forEach((e, i) => {
@@ -160,7 +186,7 @@ if (!isMobileDevice) {
 	}
 }
 
-if (isMac) {
+if (checkBrowser() === 'Safari') {
 	alertdiv.style.display = 'flex'
 }
 
