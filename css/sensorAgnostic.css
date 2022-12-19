@@ -29,3 +29,8 @@
 .sA_button:hover {
 	transform: scale(110%);
 }
+
+.sA_bGImage {
+	width: 100%;
+	opacity: 0.25;
+}

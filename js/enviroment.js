@@ -3,21 +3,19 @@ const e_buttonGroup = document.querySelector('.e_buttonGroup')
 const e_subButton = document.querySelectorAll('.e_subButton')
 const e_video = document.querySelector('.e_video')
 
-// const perHArray = [
-// 	'3D RGBD\nEnviromental\nModeling',
-// 	'Performance\nComparison',
-// 	'Lane\nDetection',
-// 	'Addresing\nFalse Positives',
-// ]
+const perHArray = [
+	'3D RGBD\nEnviromental\nModeling',
+	'Performance\nComparison',
+	'Lane\nDetection',
+	'Addresing\nFalse Positives',
+]
 e_subButton.forEach((e, i) => {
-	e.style.opacity = 0
+	e.textContent = perHArray[i]
 })
 
 e_buttons.forEach((buttonElement, i) => {
+	e_buttons[0].classList.add('e_activeButton')
 	buttonElement.addEventListener('click', (e) => {
-		e_subButton.forEach((e, i) => {
-			e.style.opacity = 1
-		})
 		e_buttons.forEach((e) => {
 			e.classList.remove('e_activeButton')
 			e.classList.remove('e_activeButtonPurple')
@@ -111,6 +109,7 @@ e_buttons.forEach((buttonElement, i) => {
 })
 
 e_subButton.forEach((subButtonElement) => {
+	e_subButton[0].classList.add('e_activeButton')
 	subButtonElement.addEventListener('click', (e) => {
 		e_subButton.forEach((e) => {
 			e.classList.remove('e_activeButton')

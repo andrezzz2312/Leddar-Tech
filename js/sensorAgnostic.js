@@ -167,13 +167,22 @@ if (img.complete) {
 const sA_videoContainer = document.querySelectorAll('#img')
 window.addEventListener('DOMContentLoaded', function () {
 	setFontSizes()
-	setTimeout(() => {
-		sA_videoContainer[2].style.opacity = 0
-		console.log('ooookay')
+
+	function pptxLoop() {
 		setTimeout(() => {
-			sA_videoContainer[1].style.opacity = 0
+			sA_videoContainer[2].style.opacity = 0
+			console.log('ooookay')
+			setTimeout(() => {
+				sA_videoContainer[1].style.opacity = 0
+				setTimeout(() => {
+					sA_videoContainer[1].style.opacity = 1
+					sA_videoContainer[2].style.opacity = 1
+					pptxLoop()
+				}, 4000)
+			}, 4000)
 		}, 4000)
-	}, 4000)
+	}
+	pptxLoop()
 })
 
 window.addEventListener('resize', function () {
