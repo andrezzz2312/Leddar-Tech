@@ -20,12 +20,27 @@ pD_buttons.forEach((buttonElement, i) => {
 				break
 
 			case 'image':
-				console.log('im')
 				console.log(e.currentTarget.dataset.source)
 				const image = document.createElement('img')
 				image.src = e.currentTarget.dataset.source
 				image.classList.add('pD_image')
 				pD_mainContainer.appendChild(image)
+				if (e.currentTarget.dataset.button) {
+					const button = document.createElement('button')
+					button.textContent = 'Click here to watch video'
+					button.classList.add('pD_watchVideo')
+					pD_mainContainer.appendChild(button)
+					button.addEventListener('click', () => {
+						const modal = document.querySelector('.pD_modalVideoContainer')
+						modal.classList.add('pD_showModal')
+						const modalVideo = document.querySelector('#modalVideo')
+						modalVideo.currentTime = 0
+						const backButton = document.querySelector('#backButton')
+						backButton.addEventListener('click', () => {
+							modal.classList.remove('pD_showModal')
+						})
+					})
+				}
 				break
 
 			case '2images':
