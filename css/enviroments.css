@@ -95,6 +95,7 @@
 .e_subButtonGroup {
 	gap: 0vh;
 	display: flex;
+	height: 10vh;
 }
 
 .e_button {
