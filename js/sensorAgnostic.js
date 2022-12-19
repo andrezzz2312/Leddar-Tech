@@ -90,7 +90,7 @@ function animations() {
 }
 
 function setFontSizes() {
-	const test = document.querySelectorAll('.button')
+	const test = document.querySelectorAll('.sA_button')
 	const circleTest = document.querySelectorAll('.circleButton')
 
 	let fontvar = `calc(7px + (27 - 7) * ((${
@@ -182,6 +182,7 @@ window.addEventListener('resize', function () {
 		containVideoHeight = getImgSizeInfo(img).height
 
 		setFontSizes()
+		ArreglarLineas()
 	}
 })
 
