@@ -173,5 +173,6 @@ e_subButton.forEach((subButtonElement) => {
 			default:
 				break
 		}
+		e_video.loop = true
 	})
 })

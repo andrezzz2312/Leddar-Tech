@@ -69,6 +69,7 @@
 	justify-content: flex-end;
 	align-items: flex-end;
 	overflow: visible;
+	pointer-events: none;
 }
 .e_buttonGroupContainer {
 	position: absolute;
@@ -81,6 +82,7 @@
 	gap: 2vh;
 	display: flex;
 	flex-direction: column;
+	pointer-events: all;
 }
 .e_buttonGroupContainer button {
 	font-weight: 500;
