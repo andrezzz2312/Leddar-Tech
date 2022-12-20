@@ -523,6 +523,19 @@ if (loop.complete) {
 		initial.style.zIndex = '-200'
 	}, 500)
 }
+loop.addEventListener('load', () => {
+	setFontSizes()
+
+	containVideoWidth = getImgSizeInfo(loop).width
+
+	containVideoHeight = getImgSizeInfo(loop).height
+	ArreglarLineas()
+
+	initial.classList.add('short-vanish')
+	setTimeout(() => {
+		initial.style.zIndex = '-200'
+	}, 500)
+})
 
 // loop.addEventListener('loadedmetadata', function (e) {
 // 	containVideoWidth = getImgSizeInfo(loop).width
