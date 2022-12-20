@@ -15,7 +15,6 @@ window.addEventListener('DOMContentLoaded', function () {
 	}
 })
 window.addEventListener('resize', function () {
-	console.log('watafaaak')
 	if (window.matchMedia('(max-width: 650px)').matches) {
 		if (window.matchMedia('(orientation: portrait)').matches) {
 			warningText.innerHTML =
