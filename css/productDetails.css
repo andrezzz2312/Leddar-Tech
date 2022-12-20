@@ -51,7 +51,7 @@ body {
 .pD_button {
 	border: none;
 	border-bottom: 0.2em solid hsla(360, 100%, 100%, 0.7);
-	padding: 2vh 1.5vh;
+	padding: 1vh 1.5vh;
 	background: transparent;
 	transition: 0.5s border-width ease;
 	/* margin-bottom: -3px; */
