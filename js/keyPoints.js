@@ -60,7 +60,7 @@ kP_buttons.forEach((buttonElement, i) => {
 				break
 
 			case 'SENSOR-AGNOSTIC':
-				kP_paragraph.innerHTML = `DRIVES OPTIMAL PERFORMANCE FROM ANY SENSOR SET, PROVIDING THE FLEXIBILITY TO HANDLE A WIDE VARIETY OF USE CASES`
+				kP_paragraph.innerHTML = `DRIVES OPTIMAL PERFORMANCE FROM ANY SENSOR SET, PROVIDING THE FLEXIBILITY TO HANDLE A WIDE VARIETY OF USE CASES.`
 				// `For any given sensor set, LeddarVision’s low-level fusion and perception technology exceeds
 				// the performance of legacy solutions by more than doubling the object detection range,
 				// allowing LeddarVision to work with the most cost-efficient sensors.As an example, LVF-E
