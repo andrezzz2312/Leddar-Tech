@@ -179,8 +179,8 @@ window.addEventListener('DOMContentLoaded', function () {
 					sA_videoContainer[2].style.opacity = 1
 					pptxLoop()
 				}, 15000)
-			}, 15000)
-		}, 15000)
+			}, 3000)
+		}, 3000)
 	}
 	pptxLoop()
 })
