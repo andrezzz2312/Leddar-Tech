@@ -1,6 +1,38 @@
 const pD_buttons = document.querySelectorAll('.pD_button')
 const pD_mainContainer = document.querySelector('.pD_mainContainer')
 
+const urlParams = new URLSearchParams(window.location.search)
+const selected = urlParams.get('selected')
+console.log(selected)
+
+if (selected) {
+	pD_buttons.forEach((e) => {
+		e.style.borderBottom = '0.2em solid hsla(360, 100%, 100%, 0.7)'
+		pD_mainContainer.innerHTML = ''
+	})
+	pD_buttons[1].style.borderBottom = '0.5em solid white'
+	const image = document.createElement('img')
+	image.src = pD_buttons[1].dataset.source
+	image.classList.add('pD_image')
+	pD_mainContainer.appendChild(image)
+	if (pD_buttons[1].dataset.button) {
+		const button = document.createElement('button')
+		button.textContent = 'Click here to watch video'
+		button.classList.add('pD_watchVideo')
+		pD_mainContainer.appendChild(button)
+		button.addEventListener('click', () => {
+			const modal = document.querySelector('.pD_modalVideoContainer')
+			modal.classList.add('pD_showModal')
+			const modalVideo = document.querySelector('#modalVideo')
+			modalVideo.currentTime = 0
+			const backButton = document.querySelector('#backButton')
+			backButton.addEventListener('click', () => {
+				modal.classList.remove('pD_showModal')
+			})
+		})
+	}
+}
+
 pD_buttons.forEach((buttonElement, i) => {
 	buttonElement.addEventListener('click', (e) => {
 		pD_buttons.forEach((e) => {
