@@ -120,8 +120,9 @@ body {
 .pD_video {
 	/* height: auto; */
 	/* max-height: 90%; */
-	width: 90%;
-	/* max-height: 80%; */
+	/* width: 90%; */
+
+	max-height: 90%;
 	height: auto;
 	border-radius: 2vh;
 	/* max-width: 100%; */
