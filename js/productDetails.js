@@ -5,20 +5,6 @@ const pDVideo1 = document.querySelector('#pDVideo1')
 const urlParams = new URLSearchParams(window.location.search)
 const selected = urlParams.get('selected')
 
-window.addEventListener('DOMContentLoaded', function () {
-	setTimeout(() => {
-		// pDVideo1.muted = false
-	}, 500)
-
-	// pDVideo1.volume = 0.5
-	// pDVideo1.play()
-})
-if (pDVideo1.readyState >= 3) {
-	// pDVideo1.volume = 0.5
-	// pDVideo1.muted = false
-	// pDVideo1.play()
-}
-
 console.log(pDVideos)
 if (selected) {
 	pD_buttons.forEach((e) => {
