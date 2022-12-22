@@ -11,6 +11,7 @@ play.addEventListener('click', () => {
 	play.style.opacity = 0
 	play.style.pointerEvents = 'none'
 	pDVideo1.controls = 'true'
+	e_video.autoplay = true
 })
 if (selected) {
 	pD_buttons.forEach((e) => {
