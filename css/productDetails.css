@@ -130,6 +130,16 @@ body {
 	/* width: 100%; */
 	/* display: flex; */
 }
+.fa-play {
+	color: white;
+	position: absolute;
+	left: 50;
+	top: 50;
+	font-size: 20vh;
+	cursor: pointer;
+	transition: 0.5s all ease;
+}
+
 .pD_modalVideoContainer {
 	background: hsla(240, 7%, 29%, 0.82);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);

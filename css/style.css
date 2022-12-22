@@ -359,6 +359,10 @@ a {
 	animation: show 0.5s ease-in-out forwards;
 	pointer-events: all;
 }
+video::-webkit-media-controls-mute-button {
+	/* background-color: #f00;
+	border-radius: 50%; */
+}
 
 .warning {
 	position: absolute;

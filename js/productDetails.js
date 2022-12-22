@@ -4,8 +4,14 @@ const pDVideos = document.querySelectorAll('.pD_video')
 const pDVideo1 = document.querySelector('#pDVideo1')
 const urlParams = new URLSearchParams(window.location.search)
 const selected = urlParams.get('selected')
+const play = document.querySelector('.fa-play')
 
-console.log(pDVideos)
+play.addEventListener('click', () => {
+	pDVideo1.play()
+	play.style.opacity = 0
+	play.style.pointerEvents = 'none'
+	pDVideo1.controls = 'true'
+})
 if (selected) {
 	pD_buttons.forEach((e) => {
 		e.style.borderBottom = '0.2em solid hsla(360, 100%, 100%, 0.7)'
