@@ -4,14 +4,13 @@ const pDVideos = document.querySelectorAll('.pD_video')
 const pDVideo1 = document.querySelector('#pDVideo1')
 const urlParams = new URLSearchParams(window.location.search)
 const selected = urlParams.get('selected')
-const play = document.querySelector('.fa-play')
+const play = document.querySelector('.fa-circle-play')
 
 play.addEventListener('click', () => {
 	pDVideo1.play()
 	play.style.opacity = 0
 	play.style.pointerEvents = 'none'
 	pDVideo1.controls = 'true'
-	e_video.autoplay = true
 })
 if (selected) {
 	pD_buttons.forEach((e) => {

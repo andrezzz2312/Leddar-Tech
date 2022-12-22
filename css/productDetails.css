@@ -130,12 +130,12 @@ body {
 	/* width: 100%; */
 	/* display: flex; */
 }
-.fa-play {
+.fa-circle-play {
 	color: white;
 	position: absolute;
 	left: 50;
 	top: 50;
-	font-size: 20vh;
+	width: 35vh;
 	cursor: pointer;
 	transition: 0.5s all ease;
 }
