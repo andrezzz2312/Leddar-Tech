@@ -119,9 +119,7 @@ e_subButton.forEach((subButtonElement) => {
 			e.classList.remove('e_activeButtonPurple')
 		})
 		e_video.autoplay = true
-		play.style.opacity = 0
-		play.style.pointerEvents = 'none'
-		eVideo.controls = 'true'
+
 		if (e.currentTarget.classList.contains('e_buttonPurple')) {
 			e.currentTarget.classList.add('e_activeButtonPurple')
 		} else {
