@@ -1,10 +1,25 @@
 const pD_buttons = document.querySelectorAll('.pD_button')
 const pD_mainContainer = document.querySelector('.pD_mainContainer')
-
+const pDVideos = document.querySelectorAll('.pD_video')
+const pDVideo1 = document.querySelector('#pDVideo1')
 const urlParams = new URLSearchParams(window.location.search)
 const selected = urlParams.get('selected')
-console.log(selected)
 
+window.addEventListener('DOMContentLoaded', function () {
+	setTimeout(() => {
+		// pDVideo1.muted = false
+	}, 500)
+
+	// pDVideo1.volume = 0.5
+	// pDVideo1.play()
+})
+if (pDVideo1.readyState >= 3) {
+	// pDVideo1.volume = 0.5
+	// pDVideo1.muted = false
+	// pDVideo1.play()
+}
+
+console.log(pDVideos)
 if (selected) {
 	pD_buttons.forEach((e) => {
 		e.style.borderBottom = '0.2em solid hsla(360, 100%, 100%, 0.7)'
