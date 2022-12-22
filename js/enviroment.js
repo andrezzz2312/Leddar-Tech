@@ -6,13 +6,6 @@ const e_video = document.querySelector('.e_video')
 const eVideo = document.querySelector('.e_video')
 const play = document.querySelector('.fa-play')
 
-play.addEventListener('click', () => {
-	eVideo.play()
-	play.style.opacity = 0
-	play.style.pointerEvents = 'none'
-	eVideo.controls = 'true'
-})
-
 const perHArray = [
 	'3D RGBD\nEnviromental\nModeling',
 	'Performance\nComparison',
