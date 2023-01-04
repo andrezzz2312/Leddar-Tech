@@ -52,8 +52,8 @@ line {
 }
 body {
 	position: absolute;
-	height: 100vh;
-	width: 100vw;
+	/* height: 100vh;
+	width: 100vw; */
 }
 
 .centerContainer {
@@ -97,7 +97,7 @@ body {
 	height: 100%;
 	background: hsla(0, 0%, 100%, 100%);
 	z-index: 1;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 .svgContainer {
 	display: flex;
@@ -207,8 +207,8 @@ a {
 	z-index: -1;
 }
 #fullscreen_button {
-	right: 1%;
-	top: 5%;
+	right: 2vw;
+	top: 4vh;
 }
 
 .boxVideo {
@@ -285,7 +285,7 @@ a {
 
 .container {
 	position: relative;
-	overflow: hidden;
+	/* overflow: hidden; */
 	height: 100%;
 	width: 100%;
 }
