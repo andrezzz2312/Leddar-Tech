@@ -46,10 +46,10 @@ const mainMenuB = document.querySelectorAll('.mainMenuB')
 const userAgent = navigator.userAgent
 let details = navigator.userAgent
 let regexp = /android|iphone|kindle|ipad/i
-// let ios = /iphone|ipad/i
+let ios = /iphone|ipad/i
 // let macosPlatforms = /(macintosh|macintel|macppc|mac68k|macos)/i
 let isMobileDevice = regexp.test(details)
-// let isIOS = ios.test(details)
+let isIOS = ios.test(details)
 // let isMac = macosPlatforms.test(details)
 
 function checkBrowser() {
@@ -177,11 +177,12 @@ const buttonContent = [
 // Display fullscreen button
 if (!isMobileDevice) {
 	fullscreen_button.style.display = 'none'
-} else {
-	if (isIOS) {
-		fullscreen_button.style.display = 'none'
-	}
 }
+// else {
+// 	if (isIOS) {
+// 		fullscreen_button.style.display = 'none'
+// 	}
+// }
 
 if (checkBrowser() === 'Safari') {
 	alertdiv.style.display = 'flex'
