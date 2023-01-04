@@ -7,7 +7,7 @@ const eVideo = document.querySelector('.e_video')
 const play = document.querySelector('.fa-play')
 
 const perHArray = [
-	'3D RGBD\nEnviromental\nModeling',
+	'3D RGBD\nEnviromental\nModelling',
 	'Performance\nComparison',
 	'Lane\nDetection',
 	'Addresing\nFalse Positives',
@@ -32,7 +32,7 @@ e_buttons.forEach((buttonElement, i) => {
 		switch (e.currentTarget.dataset.id) {
 			case 'perH':
 				const perHArray = [
-					'3D RGBD\nEnviromental\nModeling',
+					'3D RGBD\nEnviromental\nModelling',
 					'Performance\nComparison',
 					'Lane\nDetection',
 					'Addresing\nFalse Positives',
@@ -84,7 +84,7 @@ e_buttons.forEach((buttonElement, i) => {
 
 			case 'ledO':
 				const ledOArray = [
-					'Enviromental\nModeling For\nOff-Road',
+					'Enviromental\nModelling For\nOff-Road',
 					'3D Terrain\nModel',
 					'Operation\nin Degraded\nSensors',
 					'Detection and\nTracking',
