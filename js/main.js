@@ -179,6 +179,7 @@ const buttonContent = [
 // Display fullscreen button
 if (!isMobileDevice) {
 	fullscreen_button.style.display = 'none'
+	alert('asd')
 } else {
 	if (isIOS) {
 		fullscreen_button.style.display = 'none'
