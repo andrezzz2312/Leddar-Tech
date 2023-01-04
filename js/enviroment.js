@@ -10,7 +10,7 @@ const perHArray = [
 	'3D RGBD\nEnviromental\nModelling',
 	'Performance\nComparison',
 	'Lane\nDetection',
-	'Addresing\nFalse Positives',
+	'Addressing\nFalse Positives',
 ]
 e_subButton.forEach((e, i) => {
 	e.textContent = perHArray[i]
@@ -35,7 +35,7 @@ e_buttons.forEach((buttonElement, i) => {
 					'3D RGBD\nEnviromental\nModelling',
 					'Performance\nComparison',
 					'Lane\nDetection',
-					'Addresing\nFalse Positives',
+					'Addressing\nFalse Positives',
 				]
 				const perHid = ['3drE', 'perC', 'lanD', 'addF']
 				perHid.forEach((e, i) => {
@@ -52,7 +52,7 @@ e_buttons.forEach((buttonElement, i) => {
 					'Object Separation\non Highway',
 					'Occluded Object\nDetection',
 					'Lane Detection',
-					'Addresing False Positives',
+					'Addressing False Positives',
 				]
 				const adaSid = ['objS', 'occO', 'lanD', 'addF']
 				adaSid.forEach((e, i) => {
