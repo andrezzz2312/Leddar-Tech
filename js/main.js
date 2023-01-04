@@ -50,6 +50,8 @@ let ios = /iphone|ipad/i
 // let macosPlatforms = /(macintosh|macintel|macppc|mac68k|macos)/i
 let isMobileDevice = regexp.test(details)
 let isIOS = ios.test(details)
+const urlParams = new URLSearchParams(window.location.search)
+const selected = urlParams.get('selected')
 // let isMac = macosPlatforms.test(details)
 
 function checkBrowser() {
@@ -177,15 +179,10 @@ const buttonContent = [
 // Display fullscreen button
 if (!isMobileDevice) {
 	fullscreen_button.style.display = 'none'
-}
-// else {
-// 	if (isIOS) {
-// 		fullscreen_button.style.display = 'none'
-// 	}
-// }
-
-if (checkBrowser() === 'Safari') {
-	alertdiv.style.display = 'flex'
+} else {
+	if (isIOS) {
+		fullscreen_button.style.display = 'none'
+	}
 }
 
 // Set which videos are going to swap
@@ -563,6 +560,12 @@ loop.addEventListener('load', () => {
 // }
 
 window.addEventListener('DOMContentLoaded', function () {
+	if (selected === 'home') {
+	} else {
+		if (checkBrowser() === 'Safari') {
+			alertdiv.style.display = 'flex'
+		}
+	}
 	setFontSizes()
 })
 
