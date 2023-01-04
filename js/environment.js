@@ -7,7 +7,7 @@ const eVideo = document.querySelector('.e_video')
 const play = document.querySelector('.fa-play')
 
 const perHArray = [
-	'3D RGBD\nEnviromental\nModelling',
+	'3D RGBD\nEnvironmental\nModelling',
 	'Performance\nComparison',
 	'Lane\nDetection',
 	'Addressing\nFalse Positives',
@@ -32,7 +32,7 @@ e_buttons.forEach((buttonElement, i) => {
 		switch (e.currentTarget.dataset.id) {
 			case 'perH':
 				const perHArray = [
-					'3D RGBD\nEnviromental\nModelling',
+					'3D RGBD\nEnvironmental\nModelling',
 					'Performance\nComparison',
 					'Lane\nDetection',
 					'Addressing\nFalse Positives',
@@ -84,7 +84,7 @@ e_buttons.forEach((buttonElement, i) => {
 
 			case 'ledO':
 				const ledOArray = [
-					'Enviromental\nModelling For\nOff-Road',
+					'Environmental\nModelling For\nOff-Road',
 					'3D Terrain\nModel',
 					'Operation\nin Degraded\nSensors',
 					'Detection and\nTracking',
@@ -129,52 +129,52 @@ e_subButton.forEach((subButtonElement) => {
 		switch (e.currentTarget.dataset.id) {
 			case 'perH3drE':
 				console.log('working')
-				e_video.src = './assets/enviroments/enviromentalVideos/1.1.mp4'
+				e_video.src = './assets/environments/environmentalVideos/1.1.mp4'
 				break
 			case 'perHperC':
-				e_video.src = './assets/enviroments/enviromentalVideos/1.2.mp4'
+				e_video.src = './assets/environments/environmentalVideos/1.2.mp4'
 				break
 			case 'perHlanD':
-				e_video.src = './assets/enviroments/enviromentalVideos/1.3.mp4'
+				e_video.src = './assets/environments/environmentalVideos/1.3.mp4'
 				break
 			case 'perHaddF':
-				e_video.src = './assets/enviroments/enviromentalVideos/1.4.mp4'
+				e_video.src = './assets/environments/environmentalVideos/1.4.mp4'
 				break
 			case 'adaSobjS':
-				e_video.src = './assets/enviroments/enviromentalVideos/2.1.mp4'
+				e_video.src = './assets/environments/environmentalVideos/2.1.mp4'
 				break
 			case 'adaSoccO':
-				e_video.src = './assets/enviroments/enviromentalVideos/2.2.mp4'
+				e_video.src = './assets/environments/environmentalVideos/2.2.mp4'
 				break
 			case 'adaSlanD':
-				e_video.src = './assets/enviroments/enviromentalVideos/1.3.mp4'
+				e_video.src = './assets/environments/environmentalVideos/1.3.mp4'
 				break
 			case 'adaSaddF':
-				e_video.src = './assets/enviroments/enviromentalVideos/1.4.mp4'
+				e_video.src = './assets/environments/environmentalVideos/1.4.mp4'
 				break
 			case 'opeEopeB':
-				e_video.src = './assets/enviroments/enviromentalVideos/3.1.mp4'
+				e_video.src = './assets/environments/environmentalVideos/3.1.mp4'
 				break
 			case 'opeEopeR':
-				e_video.src = './assets/enviroments/enviromentalVideos/3.2.mp4'
+				e_video.src = './assets/environments/environmentalVideos/3.2.mp4'
 				break
 			case 'opeEfaiC':
-				e_video.src = './assets/enviroments/enviromentalVideos/3.3.mp4'
+				e_video.src = './assets/environments/environmentalVideos/3.3.mp4'
 				break
 			case 'opeEopeD':
-				e_video.src = './assets/enviroments/enviromentalVideos/3.4.mov'
+				e_video.src = './assets/environments/environmentalVideos/3.4.mov'
 				break
 			case 'ledOenvM':
-				e_video.src = './assets/enviroments/enviromentalVideos/4.1.mp4'
+				e_video.src = './assets/environments/environmentalVideos/4.1.mp4'
 				break
 			case 'ledO3dT':
-				e_video.src = './assets/enviroments/enviromentalVideos/4.2.mp4'
+				e_video.src = './assets/environments/environmentalVideos/4.2.mp4'
 				break
 			case 'ledOopeD':
-				e_video.src = './assets/enviroments/enviromentalVideos/3.4.mov'
+				e_video.src = './assets/environments/environmentalVideos/3.4.mov'
 				break
 			case 'ledOdetA':
-				e_video.src = './assets/enviroments/enviromentalVideos/4.4.mp4'
+				e_video.src = './assets/environments/environmentalVideos/4.4.mp4'
 				break
 			default:
 				break
