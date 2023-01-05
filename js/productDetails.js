@@ -55,6 +55,7 @@ pD_buttons.forEach((buttonElement, i) => {
 				video.controls = true
 				video.autoplay = true
 				video.playsInline = true
+				video.muted = true
 				video.classList.add('pD_video')
 				pD_mainContainer.appendChild(video)
 				break
