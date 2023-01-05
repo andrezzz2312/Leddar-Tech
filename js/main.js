@@ -500,8 +500,8 @@ function getImgSizeInfo(img) {
 		true,
 		img.offsetWidth,
 		img.offsetHeight,
-		img.width,
-		img.height,
+		img.naturalWidth,
+		img.naturalHeight,
 		parseInt(pos[0])
 	)
 }
