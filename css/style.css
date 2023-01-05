@@ -456,18 +456,6 @@ video::-webkit-media-controls-mute-button {
 	color: #ff4500;
 }
 
-@media (max-height: 550px) and (orientation: landscape) {
-	p {
-		font-size: calc(6px + (14 - 6) * ((100vw - 320px) / (1440 - 320)));
-	}
-	/* .label {
-    font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1440 - 320)));
-  } */
-	.backButton {
-		font-size: calc(8px + (12 - 8) * ((100vw - 320px) / (1440 - 320)));
-	}
-}
-
 @keyframes vanish {
 	0% {
 		opacity: 1;
