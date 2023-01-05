@@ -14,7 +14,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	background: rgb(39, 196, 214);
-	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
+	background: linear-gradient(
+		153deg,
+		rgb(45, 204, 211) 0%,
+		rgb(23, 174, 222) 100%
+	);
 }
 /* .pD_body {
 	display: flex;
@@ -22,7 +26,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background: rgb(39, 196, 214);
-	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
+	background: linear-gradient(153deg, rgb(45, 204, 211) 0%, rgb(23, 174, 222) 100%);
 	padding: 3vh;
 } */
 .pD_body > * {
@@ -34,7 +38,7 @@ body {
 	top: 2vh;
 	font-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1440 - 320)));
 	color: white;
-	text-shadow: 0.5vh 0.5vh 2px #17aede;
+	text-shadow: 0.5vh 0.5vh 2px rgb(23, 174, 222);
 }
 
 .pD_nav {
@@ -63,7 +67,7 @@ body {
 	background: transparent;
 	transition: 0.5s border-width ease;
 	/* margin-bottom: -3px; */
-	color: black;
+	color: white;
 	font-size: calc(8px + (13 - 8) * ((100vw - 320px) / (1440 - 320)));
 	cursor: pointer;
 }
@@ -111,7 +115,11 @@ body {
 	padding: 1.5% 2%;
 	color: white;
 	background: rgb(39, 196, 214);
-	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
+	background: linear-gradient(
+		153deg,
+		rgb(45, 204, 211) 0%,
+		rgb(23, 174, 222) 100%
+	);
 	cursor: pointer;
 	z-index: 0;
 	overflow: hidden;
