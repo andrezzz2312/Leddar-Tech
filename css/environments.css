@@ -79,7 +79,7 @@
 	/* margin-bottom: 3vh; */
 	justify-content: center;
 	align-items: center;
-	gap: 4%;
+	gap: 2vh;
 	display: flex;
 	flex-direction: column;
 	pointer-events: all;
@@ -89,13 +89,13 @@
 	cursor: pointer;
 }
 .e_buttonGroup {
-	gap: 0;
+	gap: 0vh;
 	display: flex;
 }
 .e_subButtonGroup {
 	gap: 0vh;
 	display: flex;
-	height: 40%;
+	height: 10vh;
 }
 
 .e_button {
