@@ -53,7 +53,7 @@ let isIOS = ios.test(details)
 const urlParams = new URLSearchParams(window.location.search)
 const selected = urlParams.get('selected')
 // let isMac = macosPlatforms.test(details)
-
+loop.src = './assets/homeScreen.png'
 function checkBrowser() {
 	if (
 		(navigator.userAgent.indexOf('Opera') ||

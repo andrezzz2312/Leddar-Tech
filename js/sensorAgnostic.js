@@ -22,8 +22,8 @@ let video3check = false
 let pCont = ''
 let list = ''
 let x = window.matchMedia('(max-height: 550px)')
-const img = document.querySelector('#img')
-const loopContainer = document.querySelector('#img')
+const img = document.querySelector('#img1')
+
 const video1Container = document.querySelector('#video1')
 const video2Container = document.querySelector('#video2')
 const video3Container = document.querySelector('#video3')
@@ -62,7 +62,7 @@ buttons.forEach((e, i) => {
 		? (buttonsText[i] = splitText[0].toLowerCase() + splitText[1].substr(0, 1))
 		: (buttonsText[i] = splitText[0].toLowerCase())
 })
-
+img.src = './assets/sensorAgnostics/button1/graphic3.png'
 // Set animations for the buttons
 function animations() {
 	if (labelCont) {
@@ -151,6 +151,7 @@ function getImgSizeInfo(img) {
 	)
 }
 if (img.complete) {
+	// alert('epic')
 	setFontSizes()
 
 	containVideoWidth = getImgSizeInfo(img).width
