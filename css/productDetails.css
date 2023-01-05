@@ -63,7 +63,7 @@ body {
 	background: transparent;
 	transition: 0.5s border-width ease;
 	/* margin-bottom: -3px; */
-	color: white;
+	color: black;
 	font-size: calc(8px + (13 - 8) * ((100vw - 320px) / (1440 - 320)));
 	cursor: pointer;
 }
