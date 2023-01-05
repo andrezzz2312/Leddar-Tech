@@ -120,17 +120,11 @@ body {
 	font-size: calc(7px + (16 - 7) * ((100vw - 320px) / (1440 - 320)));
 }
 .pD_video {
-	/* height: auto; */
-	/* max-height: 90%; */
-	/* width: 90%; */
-
 	max-height: 80%;
 	height: auto;
 	border-radius: 2vh;
-	/* max-width: 100%; */
-	/* height: 100%; */
-	/* width: 100%; */
-	/* display: flex; */
+
+	display: flex;
 }
 .fa-circle-play {
 	color: white;
@@ -170,7 +164,7 @@ body {
 	gap: 2vh;
 	border-radius: 2vh;
 	width: max-content;
-	height: 90vh;
+	height: 90%;
 	padding: 2vh 5vh;
 	background: rgb(255, 255, 255);
 	background: linear-gradient(
