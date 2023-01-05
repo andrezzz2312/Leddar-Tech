@@ -165,7 +165,7 @@ if (img.complete) {
 	}, 500)
 }
 
-const sA_videoContainer = document.querySelectorAll('#img')
+const sA_videoContainer = document.querySelectorAll('.imgjs')
 window.addEventListener('DOMContentLoaded', function () {
 	setFontSizes()
 
