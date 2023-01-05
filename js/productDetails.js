@@ -54,6 +54,7 @@ pD_buttons.forEach((buttonElement, i) => {
 				video.src = e.currentTarget.dataset.source
 				video.controls = true
 				video.autoplay = true
+				video.playsInline = true
 				video.classList.add('pD_video')
 				pD_mainContainer.appendChild(video)
 				break
