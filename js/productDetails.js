@@ -22,22 +22,6 @@ if (selected) {
 	image.src = pD_buttons[1].dataset.source
 	image.classList.add('pD_image')
 	pD_mainContainer.appendChild(image)
-	if (pD_buttons[1].dataset.button) {
-		const button = document.createElement('button')
-		button.textContent = 'Click here to watch video'
-		button.classList.add('pD_watchVideo')
-		pD_mainContainer.appendChild(button)
-		button.addEventListener('click', () => {
-			const modal = document.querySelector('.pD_modalVideoContainer')
-			modal.classList.add('pD_showModal')
-			const modalVideo = document.querySelector('#modalVideo')
-			modalVideo.currentTime = 0
-			const backButton = document.querySelector('#backButton')
-			backButton.addEventListener('click', () => {
-				modal.classList.remove('pD_showModal')
-			})
-		})
-	}
 }
 
 pD_buttons.forEach((buttonElement, i) => {
@@ -71,20 +55,22 @@ pD_buttons.forEach((buttonElement, i) => {
 					button.classList.add('pD_watchVideo')
 					pD_mainContainer.appendChild(button)
 					button.addEventListener('click', () => {
+						console.log('wtf')
 						const modal = document.querySelector('.pD_modalVideoContainer')
 						modal.classList.add('pD_showModal')
+						const modalBox = document.querySelector('.pD_modal')
+						modalBox.classList.add('pD_showModal')
 						const modalVideo = document.querySelector('#modalVideo')
 						modalVideo.currentTime = 0
 						const backButton = document.querySelector('#backButton')
 						backButton.addEventListener('click', () => {
 							modal.classList.remove('pD_showModal')
+							modalBox.classList.remove('pD_showModal')
 						})
 					})
 				}
 				break
 
-			case '2images':
-				console.log('2images')
 			default:
 				break
 		}
