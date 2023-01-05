@@ -74,7 +74,7 @@
 .e_buttonGroupContainer {
 	position: absolute;
 	right: 3%;
-	top: 0%;
+	margin-bottom: 1.5%;
 	height: 100%;
 	/* margin-bottom: 3vh; */
 	justify-content: center;
@@ -95,7 +95,7 @@
 .e_subButtonGroup {
 	gap: 0vh;
 	display: flex;
-	height: 10vh;
+	min-height: fit-content;
 }
 
 .e_button {
@@ -136,6 +136,7 @@
 .e_steeringImg {
 	position: relative;
 	width: 100%;
+
 	left: 0;
 	top: 0;
 }
