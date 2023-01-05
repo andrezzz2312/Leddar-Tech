@@ -40,7 +40,7 @@ body {
 .pD_nav {
 	width: 100%;
 	height: 30%;
-	gap: 4vh;
+	gap: 10%;
 	padding-top: 4vh;
 	background: transparent;
 	display: flex;
@@ -81,7 +81,7 @@ body {
 	align-items: flex-end;
 	width: 100%;
 	/* flex: 1; */
-	height: 10vh;
+	height: 45%;
 }
 
 .pD_svgContainer {
