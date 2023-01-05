@@ -14,7 +14,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background: rgb(39, 196, 214);
-	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);
+	/* background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%); */
 }
 /* .pD_body {
 	display: flex;
