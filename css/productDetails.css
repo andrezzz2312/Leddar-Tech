@@ -47,7 +47,15 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 }
+.pD_main {
+	width: 100%;
+	display: flex;
+	height: 75%;
 
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+}
 .pD_button {
 	border: none;
 	border-bottom: 0.2em solid hsla(360, 100%, 100%, 0.7);
@@ -72,7 +80,8 @@ body {
 	justify-content: center;
 	align-items: flex-end;
 	width: 100%;
-	height: 50%;
+	flex: 1;
+	height: 100%;
 }
 
 .pD_svgContainer {
@@ -84,23 +93,16 @@ body {
 .pD_svg {
 	width: 80%;
 }
-.pD_main {
-	width: 100%;
-	display: flex;
-	height: 75%;
 
-	justify-content: center;
-	align-items: center;
-	background: transparent;
-}
 .pD_mainContainer {
 	width: 70%;
-	height: 98%;
+	height: 97.5%;
 	display: flex;
-	justify-content: center;
+	margin-top: 5%;
+	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
-	gap: 2.5vh;
+	gap: 2.5%;
 }
 .pD_watchVideo {
 	text-align: center;
@@ -115,7 +117,7 @@ body {
 	overflow: hidden;
 	transition: 0.5s all ease;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	font-size: calc(9px + (18 - 9) * ((100vw - 320px) / (1440 - 320)));
+	font-size: calc(7px + (16 - 7) * ((100vw - 320px) / (1440 - 320)));
 }
 .pD_video {
 	/* height: auto; */
@@ -180,7 +182,7 @@ body {
 
 .pD_image {
 	max-width: 90%;
-	max-height: 80%;
+	max-height: 75%;
 	/* display: flex; */
 }
 
