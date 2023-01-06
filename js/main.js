@@ -53,7 +53,9 @@ let isIOS = ios.test(details)
 const urlParams = new URLSearchParams(window.location.search)
 const selected = urlParams.get('selected')
 // let isMac = macosPlatforms.test(details)
-loop.src = './assets/homeScreen.png'
+
+loop.src = `./assets/homeScreen.png?t=` + new Date()
+console.log(loop.src)
 function checkBrowser() {
 	if (
 		(navigator.userAgent.indexOf('Opera') ||
@@ -398,10 +400,6 @@ function setFontSizes() {
 	for (let i = 0; i < circleTest.length; i++) {
 		circleTest[i].style.fontSize = fontvar
 	}
-
-	// let fontvarViewR = `calc(7px + (17 - 7) * ((${
-	// 	containVideoWidth + 'px'
-	// } - 320px) / (1440 - 320)))`
 }
 
 function backButtonFunction() {
@@ -505,25 +503,25 @@ function getImgSizeInfo(img) {
 		parseInt(pos[0])
 	)
 }
-if (loop.complete) {
-	setFontSizes()
+// if (loop.complete) {
+// 	console.log('wtf?')
+// 	setFontSizes()
 
-	containVideoWidth = getImgSizeInfo(loop).width
+// 	containVideoWidth = getImgSizeInfo(loop).width
 
-	containVideoHeight = getImgSizeInfo(loop).height
-	ArreglarLineas()
+// 	containVideoHeight = getImgSizeInfo(loop).height
+// 	ArreglarLineas()
 
-	initial.classList.add('short-vanish')
-	setTimeout(() => {
-		initial.style.zIndex = '-200'
-	}, 500)
-}
+// 	initial.classList.add('short-vanish')
+// 	setTimeout(() => {
+// 		initial.style.zIndex = '-200'
+// 	}, 500)
+// }
 loop.addEventListener('load', () => {
-	setFontSizes()
-
 	containVideoWidth = getImgSizeInfo(loop).width
 
 	containVideoHeight = getImgSizeInfo(loop).height
+	setFontSizes()
 	ArreglarLineas()
 
 	initial.classList.add('short-vanish')

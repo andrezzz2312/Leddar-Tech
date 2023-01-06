@@ -62,7 +62,7 @@ buttons.forEach((e, i) => {
 		? (buttonsText[i] = splitText[0].toLowerCase() + splitText[1].substr(0, 1))
 		: (buttonsText[i] = splitText[0].toLowerCase())
 })
-img.src = './assets/sensorAgnostics/button1/graphic3.png'
+img.src = `./assets/sensorAgnostics/button1/graphic3.png?t=` + new Date()
 // Set animations for the buttons
 function animations() {
 	if (labelCont) {
@@ -150,20 +150,19 @@ function getImgSizeInfo(img) {
 		parseInt(pos[0])
 	)
 }
-if (img.complete) {
-	// alert('epic')
-	setFontSizes()
 
+img.addEventListener('load', () => {
 	containVideoWidth = getImgSizeInfo(img).width
 
 	containVideoHeight = getImgSizeInfo(img).height
+	setFontSizes()
 	ArreglarLineas()
 
 	initial.classList.add('short-vanish')
 	setTimeout(() => {
 		initial.style.zIndex = '-200'
 	}, 500)
-}
+})
 
 const sA_videoContainer = document.querySelectorAll('.imgjs')
 window.addEventListener('DOMContentLoaded', function () {
@@ -188,6 +187,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('resize', function () {
 	if (img.complete) {
+		console.log('locardo')
 		containVideoWidth = getImgSizeInfo(img).width
 		containVideoHeight = getImgSizeInfo(img).height
 
