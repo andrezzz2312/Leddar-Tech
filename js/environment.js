@@ -6,12 +6,7 @@ const e_video = document.querySelector('.e_video')
 const eVideo = document.querySelector('.e_video')
 const play = document.querySelector('.fa-play')
 
-const perHArray = [
-	'3D RGBD\nEnvironmental\nModelling',
-	'Performance\nComparison',
-	'Lane\nDetection',
-	'Addressing\nFalse Positives',
-]
+let perHArray = ['LVF-E', 'LVF-H', 'LVS-2+', 'LVP']
 e_subButton.forEach((e, i) => {
 	e.textContent = perHArray[i]
 })
@@ -31,12 +26,7 @@ e_buttons.forEach((buttonElement, i) => {
 
 		switch (e.currentTarget.dataset.id) {
 			case 'perH':
-				const perHArray = [
-					'3D RGBD\nEnvironmental\nModelling',
-					'Performance\nComparison',
-					'Lane\nDetection',
-					'Addressing\nFalse Positives',
-				]
+				perHArray = ['LVF-E', 'LVF-H', 'LVS-2+', 'LVP']
 				const perHid = ['3drE', 'perC', 'lanD', 'addF']
 				perHid.forEach((e, i) => {
 					perHid[i] = 'perH' + e
@@ -49,10 +39,10 @@ e_buttons.forEach((buttonElement, i) => {
 
 			case 'adaS':
 				const adaSArray = [
-					'Object Separation\non Highway',
-					'Occluded Object\nDetection',
-					'Lane Detection',
-					'Addressing False Positives',
+					'Various enviromental\nConditions',
+					'Crowded urban\nscenes',
+					'Crowded highway\nscenes',
+					'Degraded, conflicting,\nand failing sensors',
 				]
 				const adaSid = ['objS', 'occO', 'lanD', 'addF']
 				adaSid.forEach((e, i) => {
@@ -66,10 +56,10 @@ e_buttons.forEach((buttonElement, i) => {
 
 			case 'opeE':
 				const opeEArray = [
-					'Operation in\nBlinding Light',
-					'Operation\nin Rain',
-					'Failed\nCamera',
-					'Operation\nin Degraded\nSensors',
+					'Radar-Camera Fusion',
+					'LiDAR-Camera Fusion',
+					'LiDAR-Camera-Radar Fusion',
+					'Single modality',
 				]
 				const opeEid = ['opeB', 'opeR', 'faiC', 'opeD']
 				opeEid.forEach((e, i) => {
@@ -84,10 +74,10 @@ e_buttons.forEach((buttonElement, i) => {
 
 			case 'ledO':
 				const ledOArray = [
-					'Environmental\nModelling For\nOff-Road',
-					'3D Terrain\nModel',
-					'Operation\nin Degraded\nSensors',
-					'Detection and\nTracking',
+					'Robust operation\nin harsh environment',
+					'LLF goes where no\nsingle modality has\ngone before',
+					'Robust operation\nwith failing and\ndegraded sensors',
+					'Accurate object 3D\nmodeling in \nunstructured\nenvironment',
 				]
 				const ledOid = ['envM', '3dT', 'opeD', 'detA']
 				ledOid.forEach((e, i) => {

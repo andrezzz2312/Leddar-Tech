@@ -94,8 +94,10 @@
 }
 .e_subButtonGroup {
 	gap: 0vh;
-	display: flex;
-	min-height: 50%;
+	display: grid;
+	height: 10vh;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* min-height: 50%; */
 }
 
 .e_button {
@@ -108,9 +110,9 @@
 }
 .e_subButton {
 	font-size: calc(7px + (12 - 7) * ((100vw - 320px) / (1440 - 320)));
-	padding: 1vh;
+	padding: 1vw;
 	border-radius: 1vh;
-	height: 12vh;
+	height: 100%;
 	border: solid 0.2vh #88dee2;
 	background: #dff8f9;
 	color: #5eb9bd;
