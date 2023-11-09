@@ -55,7 +55,7 @@ const selected = urlParams.get('selected')
 // let isMac = macosPlatforms.test(details)
 
 loop.src = `./assets/homeScreen.png?t=` + new Date()
-console.log(loop.src)
+
 function checkBrowser() {
 	if (
 		(navigator.userAgent.indexOf('Opera') ||

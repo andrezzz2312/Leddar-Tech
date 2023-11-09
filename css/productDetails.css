@@ -56,6 +56,9 @@ body {
 	align-items: center;
 	background: transparent;
 }
+.invisible {
+	display: none;
+}
 .pD_button {
 	border: none;
 	border-bottom: 0.2em solid hsla(360, 100%, 100%, 0.7);

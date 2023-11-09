@@ -16,7 +16,6 @@
 		<title>LeddarTech</title>
 	</head>
 	<body class="pD_body">
-		<!-- <div class="pD_body"> -->
 		<nav class="pD_nav">
 			<div class="pD_headerImage">
 				<div class="pD_svgContainer">
@@ -98,6 +97,7 @@
 					class="pD_button"
 					data-media="video"
 					data-source="./assets/productDetails/pDVideo1.mp4"
+					data-button="0"
 					style="border-bottom: 0.5em solid white"
 				>
 					LeddarTech
@@ -106,6 +106,7 @@
 					class="pD_button"
 					data-media="video"
 					data-source="./assets/productDetails/pDVideo1.mp4"
+					data-button="1"
 				>
 					LeddarVision
 				</button>
@@ -113,6 +114,7 @@
 					class="pD_button"
 					data-media="image"
 					data-source="./assets/productDetails/pDImage3.png"
+					data-button="2"
 				>
 					Low Level Fusion
 				</button>
@@ -120,44 +122,10 @@
 					class="pD_button"
 					data-media="image"
 					data-source="./assets/productDetails/pDImage4.png"
+					data-button="3"
 				>
 					LLF benefits
 				</button>
-				<!-- <button
-					class="pD_button"
-					data-media="image"
-					data-button="true"
-					data-source="./assets/productDetails/pDImage5.png"
-				>
-					LEDDARVISION&trade; <br />
-					LVS-2+
-				</button>
-				<button
-					class="pD_button"
-					data-media="image"
-					data-source="./assets/productDetails/pDImage6.png"
-				>
-					LEDDARVISION&trade; <br />
-					LVP
-				</button>
-				<button
-					class="pD_button"
-					data-media="video"
-					data-source="./assets/productDetails/pDVideo2.mp4"
-				>
-					ON BOARD <br />
-					ENVIRONMENTAL <br />
-					MODELLING
-				</button>
-				<button
-					class="pD_button"
-					data-media="image"
-					data-source="./assets/productDetails/pDImage7.png"
-				>
-					LEDDARVISION <br />
-					LOWLEVEL <br />
-					FUSION (LLF)
-				</button> -->
 			</div>
 		</nav>
 		<main class="pD_main">
@@ -168,12 +136,34 @@
 					id="pDVideo1"
 					playsinline
 					poster="./assets/productDetails/poster.png"
+					data-index="0"
 				></video>
+
+				<video
+					src="./assets/productDetails/pDVideo1.mp4"
+					class="pD_video invisible"
+					id="pDVideo2"
+					playsinline
+					poster="./assets/productDetails/poster.png"
+					data-index="1"
+				></video>
+
+				<img
+					src="./assets/productDetails/pDimage2.png"
+					class="pD_image invisible"
+					alt=""
+				/>
+				<img
+					src="./assets/productDetails/pDimage3.png"
+					class="pD_image invisible"
+					alt=""
+				/>
 				<img
 					src="./assets/productDetails/playButton.png"
 					class="fa-circle-play"
 					alt=""
 				/>
+
 				<!-- <i class="fa-solid fa-circle-play"></i> -->
 			</div>
 		</main>
