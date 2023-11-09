@@ -503,20 +503,7 @@ function getImgSizeInfo(img) {
 		parseInt(pos[0])
 	)
 }
-// if (loop.complete) {
-// 	console.log('wtf?')
-// 	setFontSizes()
 
-// 	containVideoWidth = getImgSizeInfo(loop).width
-
-// 	containVideoHeight = getImgSizeInfo(loop).height
-// 	ArreglarLineas()
-
-// 	initial.classList.add('short-vanish')
-// 	setTimeout(() => {
-// 		initial.style.zIndex = '-200'
-// 	}, 500)
-// }
 loop.addEventListener('load', () => {
 	containVideoWidth = getImgSizeInfo(loop).width
 
@@ -530,33 +517,6 @@ loop.addEventListener('load', () => {
 	}, 500)
 })
 
-// loop.addEventListener('loadedmetadata', function (e) {
-// 	containVideoWidth = getImgSizeInfo(loop).width
-
-// 	containVideoHeight = getImgSizeInfo(loop).height
-// 	setFontSizes()
-// 	ArreglarLineas()
-
-// 	initial.classList.add('short-vanish')
-// 	setTimeout(() => {
-// 		initial.style.zIndex = '-200'
-// 	}, 500)
-// })
-
-// if (loop.readyState >= 1) {
-// 	setFontSizes()
-
-// 	containVideoWidth = getImgSizeInfo(loop).width
-// 	console.log(containVideoWidth)
-// 	containVideoHeight = getImgSizeInfo(loop).height
-// 	ArreglarLineas()
-
-// 	initial.classList.add('short-vanish')
-// 	setTimeout(() => {
-// 		initial.style.zIndex = '-200'
-// 	}, 500)
-// }
-
 window.addEventListener('DOMContentLoaded', function () {
 	if (selected === 'home') {
 	} else {
@@ -564,6 +524,13 @@ window.addEventListener('DOMContentLoaded', function () {
 			alertdiv.style.display = 'flex'
 		}
 	}
+	function preloadImage(url) {
+		new Image().src = url
+	}
+	for (let i = 2; i < 8; i++) {
+		preloadImage(`./assets/productDetails/pDimage${i}.png`)
+	}
+
 	setFontSizes()
 })
 
@@ -609,6 +576,11 @@ fullscreen_button.addEventListener('click', function (e) {
 		document.webkitExitFullscreen()
 	}
 })
+
+function preloadImage(url) {
+	var img = new Image()
+	img.src = url
+}
 
 buttons.forEach((e, i) => {
 	e.addEventListener('click', function (e) {
@@ -749,120 +721,4 @@ buttons.forEach((e, i) => {
 			}
 		}
 	})
-})
-
-// Check when the spinner is fully loaded
-var SirvOptions = {
-	spin: {
-		onready: function () {
-			initial.classList.remove('show')
-			initial.classList.add('short-vanish')
-			loader.style.zIndex = '-100'
-			setTimeout(() => {
-				initial.style.zIndex = '-200'
-			}, 300)
-		},
-	},
-}
-
-// View rotation button
-// viewR_button.addEventListener('click', function (e) {
-// 	loader.classList.remove('short-vanish')
-// 	loader.style.zIndex = '1'
-// 	initial.style.zIndex = '0'
-// 	initial.classList.remove('short-vanish')
-// 	initial.classList.add('show')
-
-// 	HideShowMainButtons()
-// 	HideShowCont()
-
-// 	const centerContainerMade = document.createElement('div')
-// 	centerContainerMade.classList.add('centerContainer')
-// 	centerContainerMade.style.opacity = '0'
-// 	centerContainerMade.classList.add('show')
-// 	centerContainerMade.style.zIndex = '100'
-// 	centerContainerMade.setAttribute('id', 'centerContainer_backButton')
-// 	const buttonContainerMade = document.createElement('div')
-// 	buttonContainerMade.classList.add('buttonContainer')
-// 	buttonContainerMade.setAttribute('id', 'buttonContainer_backButton')
-// 	buttonContainerMade.style.width = containVideoWidth + 'px'
-// 	buttonContainerMade.style.height = containVideoHeight + 'px'
-// 	backButton = document.createElement('button')
-// 	backButton.classList.add('viewR_a')
-// 	backButton.textContent = 'Back to Features'
-// 	let fontvar = `calc(7px + (17 - 7) * ((${
-// 		containVideoWidth + 'px'
-// 	} - 320px) / (1440 - 320)))`
-// 	backButton.style.fontSize = fontvar
-// 	backButtonContainer = document.createElement('div')
-// 	backButtonContainer.classList.add('viewR_container')
-
-// 	mainContainer.appendChild(centerContainerMade)
-// 	centerContainerMade.append(buttonContainerMade)
-// 	buttonContainerMade.appendChild(backButtonContainer)
-
-// 	backButtonContainer.appendChild(backButton)
-
-// 	window.addEventListener('resize', function (e) {
-// 		if (centerContainerMade.hasChildNodes()) {
-// 			buttonContainerMade.style.width = containVideoWidth + 'px'
-// 			buttonContainerMade.style.height = containVideoHeight + 'px'
-
-// 			let fontvar = `calc(7px + (17 - 7) * ((${
-// 				containVideoWidth + 'px'
-// 			} - 320px) / (1440 - 320)))`
-// 			backButton.style.fontSize = fontvar
-// 		}
-// 	})
-
-// 	backButton.addEventListener('click', function () {
-// 		ArreglarLineas()
-// 		backButton.style.pointerEvents = 'none'
-// 		loop.style.zIndex = '-5'
-// 		loop.currentTime = 0
-// 		loop.classList.remove('short-vanish')
-
-// 		centerContainerMade.classList.remove('show')
-// 		centerContainerMade.classList.add('short-vanish')
-
-// 		HideShowCont()
-// 		setTimeout(() => {
-// 			initial.classList.remove('show')
-// 			initial.classList.add('short-vanish')
-// 			loader.style.zIndex = '-100'
-// 			setTimeout(() => {
-// 				initial.style.zIndex = '-200'
-// 			}, 300)
-// 		}, 500)
-
-// 		HideShowMainButtons()
-
-// 		setTimeout(() => {
-// 			loop.style.zIndex = '-1'
-// 			showCont.innerHTML = ''
-
-// 			centerContainer_backButton.remove()
-// 		}, 1000)
-// 	})
-
-// 	setTimeout(() => {
-// 		const centerContainerMade = document.createElement('div')
-// 		centerContainerMade.classList.add('centerContainer')
-// 		centerContainerMade.setAttribute('id', 'centerContainer_model')
-// 		const model = document.createElement('div')
-// 		model.classList.add('Sirv')
-// 		model.setAttribute(
-// 			'data-src',
-// 			'https://rotation.marketscale.com/Companies/PearsonPackaging/40907_CaseSealer_CS25XL/CS25XL_v01/CS25XL_v01.spin'
-// 		)
-
-// 		showCont.appendChild(model)
-// 	}, 1000)
-// })
-
-close.addEventListener('click', function (e) {
-	modalalert.style.pointerEvents = 'none'
-	modalalert.style.transform = 'scale(0)'
-	alertdiv.style.opacity = 0
-	alertdiv.style.pointerEvents = 'none'
 })
