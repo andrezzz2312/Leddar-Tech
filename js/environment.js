@@ -74,10 +74,10 @@ e_buttons.forEach((buttonElement, i) => {
 
 			case 'ledO':
 				const ledOArray = [
-					'Robust operation\nin harsh environment',
-					'LLF goes where no\nsingle modality has\ngone before',
-					'Robust operation\nwith failing and\ndegraded sensors',
-					'Accurate object 3D\nmodeling in \nunstructured\nenvironment',
+					'Harsh environment -\nDust & Dirt',
+					'LLF outperforms\nsingle modality',
+					'Failing and \ndegraded sensors',
+					'Unstructured\nenvironment',
 				]
 				const ledOid = ['envM', '3dT', 'opeD', 'detA']
 				ledOid.forEach((e, i) => {
