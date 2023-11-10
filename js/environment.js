@@ -7,8 +7,12 @@ const play = document.querySelector('.fa-play')
 
 const titles = [
 	`Products`,
-	`Operating\nin all\nconditions`,
-	`Operating with\nall sensor\nmodals`,
+	`Operating
+	in all
+	conditions`,
+	`Operating with
+	all sensor
+	modals`,
 	`Off-road`,
 ]
 
