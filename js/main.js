@@ -517,6 +517,15 @@ loop.addEventListener('load', () => {
 })
 
 window.addEventListener('DOMContentLoaded', function () {
+	setFontSizes()
+	if (window.matchMedia('(max-width: 520px)').matches) {
+		if (window.matchMedia('(orientation: portrait)').matches) {
+			warningText.innerHTML =
+				' Use the device in landscape mode in order to properly use this website'
+			warning.style.opacity = '1'
+			warning.style.zIndex = '300'
+		}
+	}
 	if (selected === 'home') {
 	} else {
 		if (checkBrowser() === 'Safari') {
