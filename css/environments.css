@@ -104,6 +104,7 @@
 }
 
 .e_button {
+	white-space: pre-line;
 	border: solid 0.2vh #88dee2;
 	background: #dff8f9;
 	color: #5eb9bd;
