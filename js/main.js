@@ -513,7 +513,7 @@ loop.addEventListener('load', () => {
 	initial.classList.add('short-vanish')
 	setTimeout(() => {
 		initial.style.zIndex = '-200'
-	}, 250)
+	}, 0)
 })
 
 window.addEventListener('DOMContentLoaded', function () {
