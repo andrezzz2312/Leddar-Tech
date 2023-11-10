@@ -532,12 +532,12 @@ window.addEventListener('DOMContentLoaded', function () {
 			alertdiv.style.display = 'flex'
 		}
 	}
-	function preloadImage(url) {
-		new Image().src = url
-	}
-	for (let i = 2; i < 8; i++) {
-		preloadImage(`./assets/productDetails/pDimage${i}.png`)
-	}
+	// function preloadImage(url) {
+	// 	new Image().src = url
+	// }
+	// for (let i = 2; i < 8; i++) {
+	// 	preloadImage(`./assets/productDetails/pDimage${i}.png`)
+	// }
 
 	setFontSizes()
 })
