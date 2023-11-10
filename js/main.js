@@ -568,7 +568,12 @@ window.addEventListener('resize', function () {
 		}
 	}
 })
-
+close.addEventListener('click', function (e) {
+	modalalert.style.pointerEvents = 'none'
+	modalalert.style.transform = 'scale(0)'
+	alertdiv.style.opacity = 0
+	alertdiv.style.pointerEvents = 'none'
+})
 ////////// Event Listeners for the main buttons //////////
 
 fullscreen_button.addEventListener('click', function (e) {
