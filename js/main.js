@@ -504,7 +504,7 @@ function getImgSizeInfo(img) {
 	)
 }
 
-loop.addEventListener('loadedmetadata', () => {
+loop.addEventListener('load', () => {
 	containVideoWidth = getImgSizeInfo(loop).width
 	containVideoHeight = getImgSizeInfo(loop).height
 	setFontSizes()
