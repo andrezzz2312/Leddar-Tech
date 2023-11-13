@@ -117,13 +117,14 @@
 	/* padding: 1vw; */
 	padding: 1vw;
 	border-radius: 1vh;
+	text-align: center;
 	height: 12vh;
 	/* height: 100%; */
 	border: solid 0.2vh #88dee2;
 	background: #dff8f9;
 	color: #5eb9bd;
 	cursor: pointer;
-	white-space: pre-wrap;
+	white-space: pre-line;
 }
 .e_activeButton {
 	background: linear-gradient(153deg, #2dccd3 0%, #17aede 100%);

@@ -1,3 +1,4 @@
+import { productsTitles, leddarVisionTitles } from './variables.js'
 const pD_buttons = document.querySelectorAll('.pD_button')
 const pD_mainContainer = document.querySelector('.pD_mainContainer')
 const pDVideos = document.querySelectorAll('.pD_video')
@@ -8,6 +9,13 @@ const play = document.querySelector('.fa-circle-play')
 
 let index = 0
 let prevIndex = null
+pD_buttons.forEach((e, i) => {
+	if (window.htmlType === 'A') {
+		e.textContent = leddarVisionTitles[i]
+	} else {
+		e.textContent = productsTitles[i]
+	}
+})
 
 if (play) {
 	play.addEventListener('click', () => {
