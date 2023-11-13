@@ -1,3 +1,9 @@
+const mainButtonTitles = [
+	'LeddarVision',
+	'Products',
+	`Experience
+LeddarVision`,
+]
 const leddarVisionTitles = [
 	'LeddarTech',
 	'LeddarVision',
@@ -55,4 +61,5 @@ export {
 	enviromentSubtitles,
 	productsTitles,
 	leddarVisionTitles,
+	mainButtonTitles,
 }

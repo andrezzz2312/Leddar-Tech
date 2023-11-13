@@ -149,6 +149,7 @@ body {
 	z-index: 2;
 	overflow: hidden;
 	transition: 0.5s all ease;
+	white-space: pre-line;
 
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	/* animation: morph 2s ease-in-out infinite; */

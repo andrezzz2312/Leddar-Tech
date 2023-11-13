@@ -1,4 +1,5 @@
 // Variables
+import { mainButtonTitles } from './variables.js'
 let videoloop = ''
 let video1 = ''
 let video2 = ''
@@ -82,6 +83,10 @@ function checkBrowser() {
 }
 
 const buttons = document.querySelectorAll('.mainMenuB')
+buttons.forEach((e, i) => {
+	e.textContent = mainButtonTitles[i]
+})
+
 var buttonsText = []
 buttons.forEach((e, i) => {
 	const splitText = e.textContent.trim().split(' ')
