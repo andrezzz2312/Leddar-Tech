@@ -1,4 +1,4 @@
-import { enviromentTitles, enviromentSubtitles } from './variables.js'
+// import { enviromentTitles, enviromentSubtitles } from './variables.js'
 
 const e_buttons = document.querySelectorAll('.e_button')
 const e_buttonGroup = document.querySelector('.e_buttonGroup')

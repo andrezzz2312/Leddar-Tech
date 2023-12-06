@@ -1,5 +1,5 @@
 // Variables
-import { mainButtonTitles } from './variables.js'
+// import { mainButtonTitles } from './variables.js'
 let videoloop = ''
 let video1 = ''
 let video2 = ''

@@ -1,4 +1,4 @@
-import { productsTitles, leddarVisionTitles } from './variables.js'
+// import { productsTitles, leddarVisionTitles } from './variables.js'
 const pD_buttons = document.querySelectorAll('.pD_button')
 const pD_mainContainer = document.querySelector('.pD_mainContainer')
 const pDVideos = document.querySelectorAll('.pD_video')
